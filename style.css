@@ -3,11 +3,37 @@ body {
     padding: 0;
 }
 
-.header {
+body > * {
     padding: 30px 20% 20px 20%;
+}
+
+.header {
     display: flex;
     background-color: aquamarine;
 }
 .header > button {
     margin-left: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+dialog[open]{
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin-bottom: 10px;
+}
+dialog > * {
+    margin: 0px 20px 0 20px;
 }
